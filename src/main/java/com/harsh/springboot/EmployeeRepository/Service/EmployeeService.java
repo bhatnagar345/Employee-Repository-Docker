@@ -8,10 +8,10 @@ public interface EmployeeService {
 
     List<Employee> findAll();
 
-    Employee findById(int theId);
+    Employee findById(Integer theId);
 
     Employee save(Employee theEmployee);
 
-    void deleteById(int theId);
+    void deleteById(Integer theId);
 
 }

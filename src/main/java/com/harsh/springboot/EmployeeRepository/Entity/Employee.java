@@ -3,22 +3,17 @@ package com.harsh.springboot.EmployeeRepository.Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="employee")
 public class Employee {
 
     // define fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
-    private int id;
+    private Integer id;
 
-    @Column(name="first_name")
     private String firstName;
 
-    @Column(name="last_name")
     private String lastName;
 
-    @Column(name="email")
     private String email;
 
 
@@ -35,11 +30,11 @@ public class Employee {
 
     // define getter/setter
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
